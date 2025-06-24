@@ -110,5 +110,6 @@ This is a strong foundation for diving deeper into **microservices**, **containe
 ```bash
 docker-compose up --build
 
+---
 
 > 📌 **Note:** You can find the previous version of this project [here (V1 branch)](https://github.com/isrealei/leaflite/tree/main), which covers single-instance deployment using Docker and NGINX.
