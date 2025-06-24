@@ -2,7 +2,7 @@
 
 ### V2
 
-### Project Brief: **Deploying a Scalable Web Application with NGINX Reverse Proxy and Load Balancing**
+### Project Brief: **Deploying a Scalable Satic Web Application with NGINX Reverse Proxy and Load Balancing**
 
 #### **Objective:**
 Expand upon the student's previous project of deploying a simple website using NGINX by introducing scalability and load balancing. The goal is to deploy three instances of a web application on the server and configure NGINX as a reverse proxy and load balancer. NGINX will direct external traffic to the backend application instances to ensure better performance, fault tolerance, and scalability.
