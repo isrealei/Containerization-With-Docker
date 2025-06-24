@@ -108,6 +108,8 @@ This is a strong foundation for diving deeper into **microservices**, **containe
 ### 🚀 HOW TO RUN THIS LOCALLY
 
 ```bash
+git clone https://github.com/isrealei/Containerization-With-Docker.git
+git checkout v2
 docker-compose up --build
 ```
 
