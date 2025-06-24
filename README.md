@@ -1,78 +1,104 @@
 # leaflite
 
-### V2
+## Version 2
 
-### Project Brief: **Deploying a Scalable Satic Web Application with NGINX Reverse Proxy and Load Balancing**
-
-#### **Objective:**
-Expand upon the student's previous project of deploying a simple website using NGINX by introducing scalability and load balancing. The goal is to deploy three instances of a web application on the server and configure NGINX as a reverse proxy and load balancer. NGINX will direct external traffic to the backend application instances to ensure better performance, fault tolerance, and scalability.
+### 🚀 Project Brief: Deploying a Scalable Static Web Application with NGINX Reverse Proxy and Load Balancing
 
 ---
 
-#### **Project Scope:**
-1. **Web Application Instances:**
-   - Deploy three instances of the same web application, each running in its own Docker container.
-   - The web application will be a basic HTML-based website (or a simple dynamic application if the student wishes to extend functionality).
+### 🎯 Objective
 
-2. **NGINX Reverse Proxy and Load Balancing:**
-   - Configure NGINX to run either as a service on the host machine or as a Docker container.
-   - Set up NGINX as a reverse proxy to forward external HTTP requests to the backend web application instances.
-   - Implement load balancing to distribute incoming traffic evenly across the three backend instances.
-
-3. **Networking:**
-   - Use Docker networks to enable communication between the NGINX container (if used) and the application containers.
-   - Expose the NGINX service on the host machine to handle external traffic.
-
-4. **Documentation and Testing:**
-   - Document the deployment process, including steps to configure and test the setup.
-   - Demonstrate the load balancing functionality by accessing the application through NGINX and observing the traffic distribution among backend instances.
+Expand upon the previous project (V1), which involved deploying a simple website using NGINX, by introducing **scalability** and **load balancing**. This version deploys **three instances** of a web application on the server and uses **NGINX** as a **reverse proxy and load balancer**. NGINX directs external traffic to the backend containers, ensuring better performance, fault tolerance, and scalability.
 
 ---
 
-#### **Deliverables:**
-1. A fully functional setup with:
-   - Three running instances of the web application.
-   - NGINX configured as a reverse proxy and load balancer.
-2. Docker Compose or individual Docker commands used for deployment.
-3. Configuration files, including:
-   - NGINX configuration file (`nginx.conf` or equivalent).
-   - Any necessary Docker Compose YAML files.
-4. Documentation covering:
-   - Deployment steps.
-   - Testing procedures (e.g., how to test load balancing behavior).
+### 🧩 Project Scope
+
+#### 1. Web Application Instances
+- Deploy **three identical instances** of a static or dynamic web application.
+- Each instance runs in its **own Docker container**.
+
+#### 2. NGINX Reverse Proxy & Load Balancer
+- Run NGINX either as a **host service** or a **Docker container**.
+- Configure NGINX to:
+  - Act as a **reverse proxy** for external HTTP requests.
+  - **Load balance** incoming traffic across all backend app instances.
+
+#### 3. Networking
+- Use **Docker networks** to enable communication between containers.
+- Expose the **NGINX service** to handle external traffic from the host.
+
+#### 4. Documentation & Testing
+- Document all deployment steps and configurations.
+- Demonstrate load balancing via browser or command-line testing (`curl`, etc.).
+- Show how traffic is distributed among instances.
 
 ---
 
-#### **Requirements for the Student:**
+### 📦 Deliverables
 
-1. **Knowledge and Tools:**
-   - Familiarity with Docker and Docker Compose.
-   - Understanding of NGINX configuration for reverse proxy and load balancing.
-   - Basic networking concepts, including how Docker manages container networking.
-
-2. **Environment Setup:**
-   - A Linux server or a local machine with Docker and Docker Compose installed.
-   - Text editor or IDE to modify and create configuration files.
-   - Access to a web browser or tools like `curl` to test the application.
-
-3. **Development Steps:**
-   - Create a Dockerfile for the web application (if necessary).
-   - Deploy three instances of the web application using Docker.
-   - Configure NGINX to act as a reverse proxy and load balancer:
-     - Define upstream servers for the backend instances.
-     - Configure load balancing in NGINX (e.g., round-robin or least connections).
-   - Test the setup by accessing the application via NGINX and verifying load balancing.
-
-4. **Testing Scenarios:**
-   - Simulate external traffic by sending multiple HTTP requests and observe backend traffic distribution.
-   - Temporarily stop one backend instance and ensure NGINX continues routing traffic to the other instances.
+- ✅ Three running instances of the web application in containers.
+- ✅ NGINX configured as a reverse proxy and load balancer.
+- ✅ Deployment automation via **Docker Compose** or shell scripts.
+- ✅ Configuration files:
+  - `nginx.conf`
+  - `docker-compose.yml` (if used)
+- ✅ README documentation including:
+  - Setup steps
+  - Load balancing verification procedure
 
 ---
 
-#### **Expected Outcome:**
-By the end of this project, the student will have a clear understanding of:
-- How to deploy multiple instances of an application in Docker.
-- The role of NGINX as a reverse proxy and load balancer.
-- The importance of load balancing for scalability and fault tolerance.
+### 📚 Requirements
 
-This project serves as an excellent stepping stone towards advanced topics in containerization, microservices architecture, and system scalability.
+#### 🛠️ Tools & Knowledge
+- Docker & Docker Compose
+- Basic NGINX reverse proxy/load balancing concepts
+- Understanding Docker container networking
+
+#### 💻 Environment
+- Linux server or local machine with:
+  - Docker installed
+  - Docker Compose (if used)
+- A text editor (e.g., VS Code)
+- Browser or tools like `curl` for testing
+
+---
+
+### 🧪 Development Workflow
+
+1. **Prepare App Container:**
+   - Use an existing static site or build your own.
+   - Create a `Dockerfile` if needed.
+
+2. **Run App Instances:**
+   - Launch **three containers** for the web application.
+
+3. **Configure NGINX:**
+   - Define upstream servers in `nginx.conf`.
+   - Enable load balancing (e.g., round-robin, least connections).
+
+4. **Deploy NGINX:**
+   - Run NGINX as a service or container.
+   - Ensure it connects to the app containers via Docker network.
+
+5. **Test the Setup:**
+   - Access NGINX via a browser or `curl`.
+   - Observe load distribution.
+   - Test failure recovery by stopping one container.
+
+---
+
+### 🏁 Expected Outcome
+
+By completing this project, you will:
+
+- Deploy multiple containerized web app instances.
+- Understand NGINX's role in **reverse proxying** and **load balancing**.
+- Gain insights into **horizontal scaling** and **fault-tolerant architecture**.
+
+This is a strong foundation for diving deeper into **microservices**, **container orchestration**, and **cloud-native development**.
+
+---
+
+> 📌 **Note:** You can find the previous version of this project [here (V1 branch)](https://github.com/isrealei/leaflite/tree/main), which covers single-instance deployment using Docker and NGINX.
