@@ -45,7 +45,7 @@ Expand upon the previous project (V1), which involved deploying a simple website
 - ✅ Deployment automation via **Docker Compose** or shell scripts.
 - ✅ Configuration files:
   - `nginx.conf`
-  - `docker-compose.yml` (if used)
+  - `docker-compose.yaml` 
 - ✅ README documentation including:
   - Setup steps
   - Load balancing verification procedure
@@ -79,7 +79,8 @@ Expand upon the previous project (V1), which involved deploying a simple website
 
 3. **Configure NGINX:**
    - Define upstream servers in `nginx.conf`.
-   - Enable load balancing (e.g., round-robin, least connections).
+   - Enable load balancing (e.g., round-robin, least connections). Link to various loadbalancing algorithims could be found [here](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/)
+
 
 4. **Deploy NGINX:**
    - Run NGINX as a service or container.
