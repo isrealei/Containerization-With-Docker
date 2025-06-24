@@ -12,6 +12,9 @@ Expand upon the previous project (V1), which involved deploying a simple website
 
 ---
 
+![Architecture Diagram](./asset/architecture.gif)
+
+
 ### 🧩 Project Scope
 
 #### 1. Web Application Instances
